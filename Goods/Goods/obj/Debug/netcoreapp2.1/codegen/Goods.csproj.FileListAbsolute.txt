@@ -1,0 +1,13 @@
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\Goods.deps.json
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\Goods.runtimeconfig.json
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\Goods.runtimeconfig.dev.json
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\Goods.dll
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\Goods.pdb
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\GoodsServer.dll
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\IGoods.dll
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\IShoppingRecord.dll
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\IGoods.pdb
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\IShoppingRecord.pdb
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\bin\Debug\netcoreapp2.1\GoodsServer.pdb
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\obj\Debug\netcoreapp2.1\codegen\Goods.csproj.CoreCompileInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\Goods\Goods\obj\Debug\netcoreapp2.1\codegen\Goods.AssemblyInfoInputs.cache

@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "cedeae69f90547ce0996dc019e09f96fc8412f1d"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "ShoppingRecord/1.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.1.2",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "ShoppingRecord.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.1.2": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ShoppingRecord/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZLOdK/oLRsHeatcWokICugdkBJqaLALDlmOHY5x0YevCk6ksgay0o4xJCvYQ98Hvj88CQEuYE/6GCID0FUmLcg==",
+      "path": "microsoft.orleans.orleanscodegenerator.build/2.1.2",
+      "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.1.2.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    }
+  }
+}

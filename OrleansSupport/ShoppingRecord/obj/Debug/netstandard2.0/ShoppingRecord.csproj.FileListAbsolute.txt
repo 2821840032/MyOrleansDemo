@@ -1,0 +1,6 @@
+C:\Users\Ming\Desktop\OrelansLearning\OrleansSupport\ShoppingRecord\bin\Debug\netstandard2.0\ShoppingRecord.deps.json
+C:\Users\Ming\Desktop\OrelansLearning\OrleansSupport\ShoppingRecord\bin\Debug\netstandard2.0\ShoppingRecord.dll
+C:\Users\Ming\Desktop\OrelansLearning\OrleansSupport\ShoppingRecord\obj\Debug\netstandard2.0\ShoppingRecord.csprojAssemblyReference.cache
+C:\Users\Ming\Desktop\OrelansLearning\OrleansSupport\ShoppingRecord\obj\Debug\netstandard2.0\ShoppingRecord.csproj.CoreCompileInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\OrleansSupport\ShoppingRecord\obj\Debug\netstandard2.0\ShoppingRecord.AssemblyInfoInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\OrleansSupport\ShoppingRecord\obj\Debug\netstandard2.0\ShoppingRecord.AssemblyInfo.cs

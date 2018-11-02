@@ -1,0 +1,11 @@
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\bin\Debug\netcoreapp2.1\OrleansGateway.deps.json
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\bin\Debug\netcoreapp2.1\OrleansGateway.runtimeconfig.json
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\bin\Debug\netcoreapp2.1\OrleansGateway.runtimeconfig.dev.json
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\bin\Debug\netcoreapp2.1\OrleansGateway.dll
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\obj\Debug\netcoreapp2.1\OrleansGateway.csprojAssemblyReference.cache
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\obj\Debug\netcoreapp2.1\OrleansGateway.csproj.CoreCompileInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\obj\Debug\netcoreapp2.1\OrleansGateway.AssemblyInfoInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\obj\Debug\netcoreapp2.1\OrleansGateway.AssemblyInfo.cs
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\bin\Debug\netcoreapp2.1\OrleansGateway.pdb
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\obj\Debug\netcoreapp2.1\OrleansGateway.dll
+C:\Users\Ming\Desktop\OrelansLearning\OrleansGateway\OrleansGateway\obj\Debug\netcoreapp2.1\OrleansGateway.pdb

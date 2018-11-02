@@ -1,0 +1,7 @@
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecordServer\bin\Debug\netstandard2.0\ShoppingRecordServer.deps.json
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecordServer\bin\Debug\netstandard2.0\ShoppingRecordServer.dll
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecordServer\bin\Debug\netstandard2.0\ShoppingRecordServer.pdb
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecordServer\bin\Debug\netstandard2.0\IShoppingRecord.dll
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecordServer\bin\Debug\netstandard2.0\IShoppingRecord.pdb
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecordServer\obj\Debug\netstandard2.0\codegen\ShoppingRecordServer.csproj.CoreCompileInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecordServer\obj\Debug\netstandard2.0\codegen\ShoppingRecordServer.AssemblyInfoInputs.cache

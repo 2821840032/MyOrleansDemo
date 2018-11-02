@@ -1,0 +1,9 @@
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecord\bin\Debug\netcoreapp2.1\IGoods.dll
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecord\bin\Debug\netcoreapp2.1\IShoppingRecord.dll
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecord\bin\Debug\netcoreapp2.1\ShoppingRecordServer.dll
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecord\bin\Debug\netcoreapp2.1\IGoods.pdb
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecord\bin\Debug\netcoreapp2.1\IShoppingRecord.pdb
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecord\obj\Debug\netcoreapp2.1\ShoppingRecord.csprojAssemblyReference.cache
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecord\obj\Debug\netcoreapp2.1\ShoppingRecord.csproj.CoreCompileInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecord\obj\Debug\netcoreapp2.1\ShoppingRecord.AssemblyInfoInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\ShoppingRecord\ShoppingRecord\obj\Debug\netcoreapp2.1\ShoppingRecord.AssemblyInfo.cs
