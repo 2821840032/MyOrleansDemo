@@ -1,0 +1,9 @@
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\Goods\GoodsServer\bin\Release\netstandard2.0\GoodsServer.deps.json
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\Goods\GoodsServer\bin\Release\netstandard2.0\GoodsServer.dll
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\Goods\GoodsServer\bin\Release\netstandard2.0\GoodsServer.pdb
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\Goods\GoodsServer\bin\Release\netstandard2.0\Entity.dll
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\Goods\GoodsServer\bin\Release\netstandard2.0\IGoods.dll
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\Goods\GoodsServer\bin\Release\netstandard2.0\Entity.pdb
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\Goods\GoodsServer\bin\Release\netstandard2.0\IGoods.pdb
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\Goods\GoodsServer\obj\Release\netstandard2.0\codegen\GoodsServer.csproj.CoreCompileInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\Goods\GoodsServer\obj\Release\netstandard2.0\codegen\GoodsServer.AssemblyInfoInputs.cache

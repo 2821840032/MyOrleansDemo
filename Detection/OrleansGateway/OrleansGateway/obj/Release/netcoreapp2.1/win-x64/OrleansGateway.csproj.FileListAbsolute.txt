@@ -1,0 +1,17 @@
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\hostpolicy.dll
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\hostfxr.dll
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\OrleansGateway.exe
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\OrleansGateway.deps.json
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\OrleansGateway.runtimeconfig.json
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\OrleansGateway.runtimeconfig.dev.json
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\OrleansGateway.dll
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\OrleansGateway.pdb
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\Entity.dll
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\bin\Release\netcoreapp2.1\win-x64\Entity.pdb
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\obj\Release\netcoreapp2.1\win-x64\OrleansGateway.csprojAssemblyReference.cache
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\obj\Release\netcoreapp2.1\win-x64\OrleansGateway.csproj.CoreCompileInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\obj\Release\netcoreapp2.1\win-x64\OrleansGateway.AssemblyInfoInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\obj\Release\netcoreapp2.1\win-x64\OrleansGateway.AssemblyInfo.cs
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\obj\Release\netcoreapp2.1\win-x64\OrleansGateway.csproj.CopyComplete
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\obj\Release\netcoreapp2.1\win-x64\OrleansGateway.dll
+C:\Users\Ming\Desktop\OrelansLearning\OutsideClient\OrleansGateway\OrleansGateway\obj\Release\netcoreapp2.1\win-x64\OrleansGateway.pdb
