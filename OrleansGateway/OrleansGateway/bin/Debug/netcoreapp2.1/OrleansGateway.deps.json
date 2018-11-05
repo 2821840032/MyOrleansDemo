@@ -1,18 +1,48 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "df5aa8ee6d7084ccbecdd32ef854c544c65608ce"
+    "signature": "7d2d0668b42be368ed5699b62ce09d4e5d2f0dac"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "OrleansGateway/1.0.0": {
         "dependencies": {
+          "Entity": "1.0.0",
           "Microsoft.Extensions.Logging.Console": "2.1.1",
+          "Microsoft.Orleans.OrleansGoogleUtils": "2.1.2",
           "Microsoft.Orleans.Server": "2.1.2"
         },
         "runtime": {
           "OrleansGateway.dll": {}
+        }
+      },
+      "Bond.Core.CSharp/5.3.1": {
+        "runtime": {
+          "lib/netstandard1.6/Bond.Attributes.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.6/Bond.IO.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.6/Bond.Reflection.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.6/Bond.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Google.Protobuf/3.4.0": {
+        "runtime": {
+          "lib/netstandard1.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
+          }
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -254,6 +284,18 @@
           }
         }
       },
+      "Microsoft.Orleans.OrleansGoogleUtils/2.1.2": {
+        "dependencies": {
+          "Google.Protobuf": "3.4.0",
+          "Microsoft.Orleans.Core": "2.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.Serialization.Protobuf.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "Microsoft.Orleans.OrleansProviders/2.1.2": {
         "dependencies": {
           "Microsoft.Orleans.Core": "2.1.2",
@@ -286,6 +328,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Orleans.Runtime.Abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Orleans.Serialization.Bond/2.1.2": {
+        "dependencies": {
+          "Bond.Core.CSharp": "5.3.1",
+          "Microsoft.Orleans.Core": "2.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.Serialization.Bond.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
           }
@@ -1159,6 +1213,15 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "Entity/1.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Core": "2.1.2",
+          "Microsoft.Orleans.Serialization.Bond": "2.1.2"
+        },
+        "runtime": {
+          "Entity.dll": {}
+        }
       }
     }
   },
@@ -1167,6 +1230,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Bond.Core.CSharp/5.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oGErDYC+fo8RmDxPF5mbNd/sszXLTrXpJ44TffaUuDX3v5D5y4TizNWcVA7C0jHLBdPXR2E9DSuQoQom7SJFNA==",
+      "path": "bond.core.csharp/5.3.1",
+      "hashPath": "bond.core.csharp.5.3.1.nupkg.sha512"
+    },
+    "Google.Protobuf/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0J/rY+xBCRnapwUtNiT/3izNX7fREzXjChtkkC7RNnwB8RS/3h95C1geUTC79XuYO1Mr3UGqPfnoxs2Jm6B01g==",
+      "path": "google.protobuf/3.4.0",
+      "hashPath": "google.protobuf.3.4.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
@@ -1287,6 +1364,13 @@
       "path": "microsoft.orleans.core.abstractions/2.1.2",
       "hashPath": "microsoft.orleans.core.abstractions.2.1.2.nupkg.sha512"
     },
+    "Microsoft.Orleans.OrleansGoogleUtils/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CBtHWbBNGPIZ5Gyaqiy/GwxOrnlYWFj4F1FPY2nUFziDljcLEIKzMPCacEPxi8ZT9z/vf8saUjCq62ihjUlR0w==",
+      "path": "microsoft.orleans.orleansgoogleutils/2.1.2",
+      "hashPath": "microsoft.orleans.orleansgoogleutils.2.1.2.nupkg.sha512"
+    },
     "Microsoft.Orleans.OrleansProviders/2.1.2": {
       "type": "package",
       "serviceable": true,
@@ -1307,6 +1391,13 @@
       "sha512": "sha512-Yx7uT7ociuapZ737OtwFgix/Ogw0Z6/Va4lHUd0y6TpfKEG17RpBzTfDQO5IG1lxsqeZWDuxcczYnQqjWpOnbw==",
       "path": "microsoft.orleans.runtime.abstractions/2.1.2",
       "hashPath": "microsoft.orleans.runtime.abstractions.2.1.2.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Serialization.Bond/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ExsEN2Po+5ch2lFRPYfo2w4f/2h1HaHwZ81NUvi7JW/WG0EhjduEfjuVE/TRxcXvx4otQUvSE5Lm1pf6fBcIIw==",
+      "path": "microsoft.orleans.serialization.bond/2.1.2",
+      "hashPath": "microsoft.orleans.serialization.bond.2.1.2.nupkg.sha512"
     },
     "Microsoft.Orleans.Server/2.1.2": {
       "type": "package",
@@ -1895,6 +1986,11 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

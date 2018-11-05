@@ -1,7 +1,12 @@
 /in:obj\Debug\netstandard2.0\codegen\GoodsServer.dll
-/out:C:\Users\Ming\Desktop\OrelansLearning\Goods\GoodsServer\obj\Debug\netstandard2.0\GoodsServer.orleans.g.cs
+/out:C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\Goods\GoodsServer\obj\Debug\netstandard2.0\GoodsServer.orleans.g.cs
 /loglevel:Warning
-/r:C:\Users\Ming\Desktop\OrelansLearning\OrleansSupport\IGoods\bin\Debug\netstandard2.0\IGoods.dll
+/r:C:\Users\Ming\.nuget\packages\bond.core.csharp\5.3.1\lib\netstandard1.6\Bond.Attributes.dll
+/r:C:\Users\Ming\.nuget\packages\bond.core.csharp\5.3.1\lib\netstandard1.6\Bond.dll
+/r:C:\Users\Ming\.nuget\packages\bond.core.csharp\5.3.1\lib\netstandard1.6\Bond.IO.dll
+/r:C:\Users\Ming\.nuget\packages\bond.core.csharp\5.3.1\lib\netstandard1.6\Bond.Reflection.dll
+/r:C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OrleansSupport\Entity\bin\Debug\netstandard2.0\Entity.dll
+/r:C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OrleansSupport\IGoods\bin\Debug\netstandard2.0\IGoods.dll
 /r:C:\Users\Ming\.nuget\packages\microsoft.csharp\4.3.0\ref\netstandard1.0\Microsoft.CSharp.dll
 /r:C:\Users\Ming\.nuget\packages\microsoft.dotnet.platformabstractions\2.0.0\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll
 /r:C:\Users\Ming\.nuget\packages\microsoft.extensions.configuration.abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -21,6 +26,7 @@
 /r:C:\Users\Ming\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll
 /r:C:\Users\Ming\.nuget\packages\microsoft.orleans.core.abstractions\2.1.2\lib\netstandard2.0\Orleans.Core.Abstractions.dll
 /r:C:\Users\Ming\.nuget\packages\microsoft.orleans.core\2.1.2\lib\netstandard2.0\Orleans.Core.dll
+/r:C:\Users\Ming\.nuget\packages\microsoft.orleans.serialization.bond\2.1.2\lib\netstandard2.0\Orleans.Serialization.Bond.dll
 /r:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.AppContext.dll
 /r:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Collections.Concurrent.dll
 /r:C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\ref\System.Collections.dll

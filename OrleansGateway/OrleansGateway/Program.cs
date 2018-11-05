@@ -1,8 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
 using Orleans.Configuration;
 using Orleans.Hosting;
+using Orleans.Serialization;
 using System;
 using System.Net;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace OrleansGateway
@@ -31,6 +33,7 @@ namespace OrleansGateway
         /// <returns></returns>
         static async  Task<ISiloHost> StartHost() {
             var builder = new SiloHostBuilder()
+                  .Configure<SerializationProviderOptions>(d => { d.SerializationProviders.Add(typeof(ProtobufSerializer).GetTypeInfo()); d.FallbackSerializationProvider = typeof(ProtobufSerializer).GetTypeInfo(); })
                     .UseLocalhostClustering()
                 .Configure<ClusterOptions>(options =>
                 {

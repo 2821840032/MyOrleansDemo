@@ -5831,11 +5831,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj",
+      "projectUniqueName": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj",
       "projectName": "IShoppingRecord",
-      "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj",
+      "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj",
       "packagesPath": "C:\\Users\\Ming\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\ShoppingRecord\\obj\\",
+      "outputPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\ShoppingRecord\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Bond.Core.CSharp/5.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.6/Bond.Attributes.dll": {},
+          "lib/netstandard1.6/Bond.IO.dll": {},
+          "lib/netstandard1.6/Bond.Reflection.dll": {},
+          "lib/netstandard1.6/Bond.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Bond.Attributes.dll": {},
+          "lib/netstandard1.6/Bond.IO.dll": {},
+          "lib/netstandard1.6/Bond.Reflection.dll": {},
+          "lib/netstandard1.6/Bond.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -260,6 +275,19 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/Microsoft.Orleans.OrleansCodeGenerator.Build.targets": {}
+        }
+      },
+      "Microsoft.Orleans.Serialization.Bond/2.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Bond.Core.CSharp": "5.3.1",
+          "Microsoft.Orleans.Core": "2.1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Orleans.Serialization.Bond.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.Serialization.Bond.dll": {}
         }
       },
       "Microsoft.Win32.Primitives/4.3.0": {
@@ -1605,10 +1633,100 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Orleans.Core": "2.1.2",
+          "Microsoft.Orleans.Serialization.Bond": "2.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entity.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Bond.Core.CSharp/5.3.1": {
+      "sha512": "oGErDYC+fo8RmDxPF5mbNd/sszXLTrXpJ44TffaUuDX3v5D5y4TizNWcVA7C0jHLBdPXR2E9DSuQoQom7SJFNA==",
+      "type": "package",
+      "path": "bond.core.csharp/5.3.1",
+      "files": [
+        ".signature.p7s",
+        "bond.core.csharp.5.3.1.nupkg.sha512",
+        "bond.core.csharp.nuspec",
+        "lib/net40/Bond.Attributes.dll",
+        "lib/net40/Bond.Attributes.pdb",
+        "lib/net40/Bond.Attributes.xml",
+        "lib/net40/Bond.IO.dll",
+        "lib/net40/Bond.IO.pdb",
+        "lib/net40/Bond.IO.xml",
+        "lib/net40/Bond.Reflection.dll",
+        "lib/net40/Bond.Reflection.pdb",
+        "lib/net40/Bond.Reflection.xml",
+        "lib/net40/Bond.dll",
+        "lib/net40/Bond.pdb",
+        "lib/net40/Bond.xml",
+        "lib/net45/Bond.Attributes.dll",
+        "lib/net45/Bond.Attributes.pdb",
+        "lib/net45/Bond.Attributes.xml",
+        "lib/net45/Bond.IO.dll",
+        "lib/net45/Bond.IO.pdb",
+        "lib/net45/Bond.IO.xml",
+        "lib/net45/Bond.Reflection.dll",
+        "lib/net45/Bond.Reflection.pdb",
+        "lib/net45/Bond.Reflection.xml",
+        "lib/net45/Bond.dll",
+        "lib/net45/Bond.pdb",
+        "lib/net45/Bond.xml",
+        "lib/netstandard1.0/Bond.Attributes.dll",
+        "lib/netstandard1.0/Bond.Attributes.pdb",
+        "lib/netstandard1.0/Bond.Attributes.xml",
+        "lib/netstandard1.0/Bond.Reflection.dll",
+        "lib/netstandard1.0/Bond.Reflection.pdb",
+        "lib/netstandard1.0/Bond.Reflection.xml",
+        "lib/netstandard1.0/Bond.dll",
+        "lib/netstandard1.0/Bond.pdb",
+        "lib/netstandard1.0/Bond.xml",
+        "lib/netstandard1.3/Bond.Attributes.dll",
+        "lib/netstandard1.3/Bond.Attributes.pdb",
+        "lib/netstandard1.3/Bond.Attributes.xml",
+        "lib/netstandard1.3/Bond.IO.dll",
+        "lib/netstandard1.3/Bond.IO.pdb",
+        "lib/netstandard1.3/Bond.IO.xml",
+        "lib/netstandard1.3/Bond.Reflection.dll",
+        "lib/netstandard1.3/Bond.Reflection.pdb",
+        "lib/netstandard1.3/Bond.Reflection.xml",
+        "lib/netstandard1.3/Bond.dll",
+        "lib/netstandard1.3/Bond.pdb",
+        "lib/netstandard1.3/Bond.xml",
+        "lib/netstandard1.6/Bond.Attributes.dll",
+        "lib/netstandard1.6/Bond.Attributes.pdb",
+        "lib/netstandard1.6/Bond.Attributes.xml",
+        "lib/netstandard1.6/Bond.IO.dll",
+        "lib/netstandard1.6/Bond.IO.pdb",
+        "lib/netstandard1.6/Bond.IO.xml",
+        "lib/netstandard1.6/Bond.Reflection.dll",
+        "lib/netstandard1.6/Bond.Reflection.pdb",
+        "lib/netstandard1.6/Bond.Reflection.xml",
+        "lib/netstandard1.6/Bond.dll",
+        "lib/netstandard1.6/Bond.pdb",
+        "lib/netstandard1.6/Bond.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Attributes.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Attributes.pdb",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Attributes.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Reflection.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Reflection.pdb",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Reflection.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.pdb",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.xml"
+      ]
+    },
     "Microsoft.CSharp/4.3.0": {
       "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "type": "package",
@@ -2075,6 +2193,19 @@
         "tasks/netcoreapp2.1/System.Text.Encoding.CodePages.dll",
         "tasks/netcoreapp2.1/System.Xml.XPath.XmlDocument.dll",
         "tasks/netcoreapp2.1/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll"
+      ]
+    },
+    "Microsoft.Orleans.Serialization.Bond/2.1.2": {
+      "sha512": "ExsEN2Po+5ch2lFRPYfo2w4f/2h1HaHwZ81NUvi7JW/WG0EhjduEfjuVE/TRxcXvx4otQUvSE5Lm1pf6fBcIIw==",
+      "type": "package",
+      "path": "microsoft.orleans.serialization.bond/2.1.2",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Orleans.Serialization.Bond.dll",
+        "lib/netstandard2.0/Orleans.Serialization.Bond.pdb",
+        "lib/netstandard2.0/Orleans.Serialization.Bond.xml",
+        "microsoft.orleans.serialization.bond.2.1.2.nupkg.sha512",
+        "microsoft.orleans.serialization.bond.nuspec"
       ]
     },
     "Microsoft.Win32.Primitives/4.3.0": {
@@ -5815,10 +5946,16 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Entity/1.0.0": {
+      "type": "project",
+      "path": "../Entity/Entity.csproj",
+      "msbuildProject": "../Entity/Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Entity >= 1.0.0",
       "Microsoft.Orleans.Core >= 2.1.2",
       "Microsoft.Orleans.OrleansCodeGenerator.Build >= 2.1.2",
       "NETStandard.Library >= 2.0.3"
@@ -5831,11 +5968,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\IGoods\\IGoods.csproj",
+      "projectUniqueName": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\IGoods\\IGoods.csproj",
       "projectName": "IGoods",
-      "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\IGoods\\IGoods.csproj",
+      "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\IGoods\\IGoods.csproj",
       "packagesPath": "C:\\Users\\Ming\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\IGoods\\obj\\",
+      "outputPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\IGoods\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5854,7 +5991,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\Entity\\Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "fdadf555b6aff697c9367aec7affd06261996b37"
+    "signature": "e0a12da66cdafdb09f4c383a4d94044f4cb314df"
   },
   "compilationOptions": {
     "defines": [
@@ -25,6 +25,7 @@
     ".NETStandard,Version=v2.0": {
       "IGoods/1.0.0": {
         "dependencies": {
+          "Entity": "1.0.0",
           "Microsoft.Orleans.Core": "2.1.2",
           "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.1.2",
           "NETStandard.Library": "2.0.3",
@@ -711,6 +712,14 @@
           "System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Bond.Core.CSharp/5.3.1": {
+        "compile": {
+          "lib/netstandard1.6/Bond.Attributes.dll": {},
+          "lib/netstandard1.6/Bond.IO.dll": {},
+          "lib/netstandard1.6/Bond.Reflection.dll": {},
+          "lib/netstandard1.6/Bond.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -887,6 +896,15 @@
         }
       },
       "Microsoft.Orleans.OrleansCodeGenerator.Build/2.1.2": {},
+      "Microsoft.Orleans.Serialization.Bond/2.1.2": {
+        "dependencies": {
+          "Bond.Core.CSharp": "5.3.1",
+          "Microsoft.Orleans.Core": "2.1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Orleans.Serialization.Bond.dll": {}
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1625,11 +1643,21 @@
         "compile": {
           "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Entity/1.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Core": "2.1.2",
+          "Microsoft.Orleans.Serialization.Bond": "2.1.2"
+        },
+        "compile": {
+          "Entity.dll": {}
+        }
       }
     },
     ".NETStandard,Version=v2.0/": {
       "IGoods/1.0.0": {
         "dependencies": {
+          "Entity": "1.0.0",
           "Microsoft.Orleans.Core": "2.1.2",
           "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.1.2",
           "NETStandard.Library": "2.0.3",
@@ -1749,6 +1777,26 @@
         },
         "runtime": {
           "IGoods.dll": {}
+        }
+      },
+      "Bond.Core.CSharp/5.3.1": {
+        "runtime": {
+          "lib/netstandard1.6/Bond.Attributes.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.6/Bond.IO.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.6/Bond.Reflection.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.6/Bond.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -1972,6 +2020,18 @@
         }
       },
       "Microsoft.Orleans.OrleansCodeGenerator.Build/2.1.2": {},
+      "Microsoft.Orleans.Serialization.Bond/2.1.2": {
+        "dependencies": {
+          "Bond.Core.CSharp": "5.3.1",
+          "Microsoft.Orleans.Core": "2.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.Serialization.Bond.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -2893,6 +2953,15 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "Entity/1.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Core": "2.1.2",
+          "Microsoft.Orleans.Serialization.Bond": "2.1.2"
+        },
+        "runtime": {
+          "Entity.dll": {}
+        }
       }
     }
   },
@@ -2901,6 +2970,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Bond.Core.CSharp/5.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oGErDYC+fo8RmDxPF5mbNd/sszXLTrXpJ44TffaUuDX3v5D5y4TizNWcVA7C0jHLBdPXR2E9DSuQoQom7SJFNA==",
+      "path": "bond.core.csharp/5.3.1",
+      "hashPath": "bond.core.csharp.5.3.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
@@ -3027,6 +3103,13 @@
       "sha512": "sha512-ZLOdK/oLRsHeatcWokICugdkBJqaLALDlmOHY5x0YevCk6ksgay0o4xJCvYQ98Hvj88CQEuYE/6GCID0FUmLcg==",
       "path": "microsoft.orleans.orleanscodegenerator.build/2.1.2",
       "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.1.2.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Serialization.Bond/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ExsEN2Po+5ch2lFRPYfo2w4f/2h1HaHwZ81NUvi7JW/WG0EhjduEfjuVE/TRxcXvx4otQUvSE5Lm1pf6fBcIIw==",
+      "path": "microsoft.orleans.serialization.bond/2.1.2",
+      "hashPath": "microsoft.orleans.serialization.bond.2.1.2.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
@@ -3608,6 +3691,11 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.Win32.Primitives.Reference/4.0.3.0": {
       "type": "referenceassembly",

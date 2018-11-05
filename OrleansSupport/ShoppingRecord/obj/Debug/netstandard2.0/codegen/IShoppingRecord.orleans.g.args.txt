@@ -1,5 +1,5 @@
 /in:obj\Debug\netstandard2.0\codegen\IShoppingRecord.dll
-/out:C:\Users\Ming\Desktop\OrelansLearning\OrleansSupport\ShoppingRecord\obj\Debug\netstandard2.0\IShoppingRecord.orleans.g.cs
+/out:C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OrleansSupport\ShoppingRecord\obj\Debug\netstandard2.0\IShoppingRecord.orleans.g.cs
 /loglevel:Warning
 /r:C:\Users\Ming\.nuget\packages\microsoft.csharp\4.3.0\ref\netstandard1.0\Microsoft.CSharp.dll
 /r:C:\Users\Ming\.nuget\packages\microsoft.dotnet.platformabstractions\2.0.0\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll

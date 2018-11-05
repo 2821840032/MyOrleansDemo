@@ -461,15 +461,6 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.1.2": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Orleans.OrleansCodeGenerator.Build.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.Orleans.OrleansCodeGenerator.Build.targets": {}
-        }
-      },
       "Microsoft.Orleans.OrleansProviders/2.1.2": {
         "type": "package",
         "dependencies": {
@@ -1866,6 +1857,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\Entity\\Entity.csproj": "1.0.0",
           "Microsoft.Orleans.Core": "2.1.2"
         },
         "compile": {
@@ -2504,226 +2496,6 @@
         "lib/netstandard2.0/Orleans.Core.Abstractions.xml",
         "microsoft.orleans.core.abstractions.2.1.2.nupkg.sha512",
         "microsoft.orleans.core.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.1.2": {
-      "sha512": "ZLOdK/oLRsHeatcWokICugdkBJqaLALDlmOHY5x0YevCk6ksgay0o4xJCvYQ98Hvj88CQEuYE/6GCID0FUmLcg==",
-      "type": "package",
-      "path": "microsoft.orleans.orleanscodegenerator.build/2.1.2",
-      "files": [
-        ".signature.p7s",
-        "build/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
-        "buildMultiTargeting/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
-        "microsoft.orleans.orleanscodegenerator.build.2.1.2.nupkg.sha512",
-        "microsoft.orleans.orleanscodegenerator.build.nuspec",
-        "tasks/net461/Microsoft.Build.Framework.dll",
-        "tasks/net461/Microsoft.Build.Utilities.Core.dll",
-        "tasks/net461/Microsoft.CodeAnalysis.CSharp.dll",
-        "tasks/net461/Microsoft.CodeAnalysis.dll",
-        "tasks/net461/Microsoft.DotNet.PlatformAbstractions.dll",
-        "tasks/net461/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "tasks/net461/Microsoft.Extensions.Configuration.Binder.dll",
-        "tasks/net461/Microsoft.Extensions.Configuration.dll",
-        "tasks/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tasks/net461/Microsoft.Extensions.DependencyInjection.dll",
-        "tasks/net461/Microsoft.Extensions.DependencyModel.dll",
-        "tasks/net461/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tasks/net461/Microsoft.Extensions.Logging.Console.dll",
-        "tasks/net461/Microsoft.Extensions.Logging.dll",
-        "tasks/net461/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "tasks/net461/Microsoft.Extensions.Options.dll",
-        "tasks/net461/Microsoft.Extensions.Primitives.dll",
-        "tasks/net461/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
-        "tasks/net461/Microsoft.Win32.Primitives.dll",
-        "tasks/net461/Newtonsoft.Json.dll",
-        "tasks/net461/Orleans.CodeGeneration.Build.deps.json",
-        "tasks/net461/Orleans.CodeGeneration.Build.exe",
-        "tasks/net461/Orleans.CodeGeneration.Build.exe.config",
-        "tasks/net461/Orleans.CodeGeneration.Build.xml",
-        "tasks/net461/Orleans.CodeGeneration.dll",
-        "tasks/net461/Orleans.CodeGeneration.pdb",
-        "tasks/net461/Orleans.CodeGeneration.xml",
-        "tasks/net461/Orleans.Core.Abstractions.dll",
-        "tasks/net461/Orleans.Core.Abstractions.pdb",
-        "tasks/net461/Orleans.Core.Abstractions.xml",
-        "tasks/net461/Orleans.Core.dll",
-        "tasks/net461/Orleans.Core.pdb",
-        "tasks/net461/Orleans.Core.xml",
-        "tasks/net461/System.AppContext.dll",
-        "tasks/net461/System.Collections.Concurrent.dll",
-        "tasks/net461/System.Collections.Immutable.dll",
-        "tasks/net461/System.Collections.NonGeneric.dll",
-        "tasks/net461/System.Collections.Specialized.dll",
-        "tasks/net461/System.Collections.dll",
-        "tasks/net461/System.ComponentModel.EventBasedAsync.dll",
-        "tasks/net461/System.ComponentModel.Primitives.dll",
-        "tasks/net461/System.ComponentModel.TypeConverter.dll",
-        "tasks/net461/System.ComponentModel.dll",
-        "tasks/net461/System.Console.dll",
-        "tasks/net461/System.Data.Common.dll",
-        "tasks/net461/System.Diagnostics.Contracts.dll",
-        "tasks/net461/System.Diagnostics.Debug.dll",
-        "tasks/net461/System.Diagnostics.FileVersionInfo.dll",
-        "tasks/net461/System.Diagnostics.Process.dll",
-        "tasks/net461/System.Diagnostics.StackTrace.dll",
-        "tasks/net461/System.Diagnostics.TextWriterTraceListener.dll",
-        "tasks/net461/System.Diagnostics.Tools.dll",
-        "tasks/net461/System.Diagnostics.TraceSource.dll",
-        "tasks/net461/System.Diagnostics.Tracing.dll",
-        "tasks/net461/System.Drawing.Primitives.dll",
-        "tasks/net461/System.Dynamic.Runtime.dll",
-        "tasks/net461/System.Globalization.Calendars.dll",
-        "tasks/net461/System.Globalization.Extensions.dll",
-        "tasks/net461/System.Globalization.dll",
-        "tasks/net461/System.IO.Compression.ZipFile.dll",
-        "tasks/net461/System.IO.Compression.dll",
-        "tasks/net461/System.IO.FileSystem.DriveInfo.dll",
-        "tasks/net461/System.IO.FileSystem.Primitives.dll",
-        "tasks/net461/System.IO.FileSystem.Watcher.dll",
-        "tasks/net461/System.IO.FileSystem.dll",
-        "tasks/net461/System.IO.IsolatedStorage.dll",
-        "tasks/net461/System.IO.MemoryMappedFiles.dll",
-        "tasks/net461/System.IO.Pipes.dll",
-        "tasks/net461/System.IO.UnmanagedMemoryStream.dll",
-        "tasks/net461/System.IO.dll",
-        "tasks/net461/System.Linq.Expressions.dll",
-        "tasks/net461/System.Linq.Parallel.dll",
-        "tasks/net461/System.Linq.Queryable.dll",
-        "tasks/net461/System.Linq.dll",
-        "tasks/net461/System.Net.Http.dll",
-        "tasks/net461/System.Net.NameResolution.dll",
-        "tasks/net461/System.Net.NetworkInformation.dll",
-        "tasks/net461/System.Net.Ping.dll",
-        "tasks/net461/System.Net.Primitives.dll",
-        "tasks/net461/System.Net.Requests.dll",
-        "tasks/net461/System.Net.Security.dll",
-        "tasks/net461/System.Net.Sockets.dll",
-        "tasks/net461/System.Net.WebHeaderCollection.dll",
-        "tasks/net461/System.Net.WebSockets.Client.dll",
-        "tasks/net461/System.Net.WebSockets.dll",
-        "tasks/net461/System.ObjectModel.dll",
-        "tasks/net461/System.Reflection.Extensions.dll",
-        "tasks/net461/System.Reflection.Metadata.dll",
-        "tasks/net461/System.Reflection.Primitives.dll",
-        "tasks/net461/System.Reflection.TypeExtensions.dll",
-        "tasks/net461/System.Reflection.dll",
-        "tasks/net461/System.Resources.Reader.dll",
-        "tasks/net461/System.Resources.ResourceManager.dll",
-        "tasks/net461/System.Resources.Writer.dll",
-        "tasks/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "tasks/net461/System.Runtime.CompilerServices.VisualC.dll",
-        "tasks/net461/System.Runtime.Extensions.dll",
-        "tasks/net461/System.Runtime.Handles.dll",
-        "tasks/net461/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "tasks/net461/System.Runtime.InteropServices.dll",
-        "tasks/net461/System.Runtime.Loader.dll",
-        "tasks/net461/System.Runtime.Numerics.dll",
-        "tasks/net461/System.Runtime.Serialization.Formatters.dll",
-        "tasks/net461/System.Runtime.Serialization.Json.dll",
-        "tasks/net461/System.Runtime.Serialization.Primitives.dll",
-        "tasks/net461/System.Runtime.Serialization.Xml.dll",
-        "tasks/net461/System.Runtime.dll",
-        "tasks/net461/System.Security.Claims.dll",
-        "tasks/net461/System.Security.Cryptography.Algorithms.dll",
-        "tasks/net461/System.Security.Cryptography.Csp.dll",
-        "tasks/net461/System.Security.Cryptography.Encoding.dll",
-        "tasks/net461/System.Security.Cryptography.Primitives.dll",
-        "tasks/net461/System.Security.Cryptography.X509Certificates.dll",
-        "tasks/net461/System.Security.Principal.dll",
-        "tasks/net461/System.Security.SecureString.dll",
-        "tasks/net461/System.Text.Encoding.CodePages.dll",
-        "tasks/net461/System.Text.Encoding.Extensions.dll",
-        "tasks/net461/System.Text.Encoding.dll",
-        "tasks/net461/System.Text.RegularExpressions.dll",
-        "tasks/net461/System.Threading.Overlapped.dll",
-        "tasks/net461/System.Threading.Tasks.Extensions.dll",
-        "tasks/net461/System.Threading.Tasks.Parallel.dll",
-        "tasks/net461/System.Threading.Tasks.dll",
-        "tasks/net461/System.Threading.Thread.dll",
-        "tasks/net461/System.Threading.ThreadPool.dll",
-        "tasks/net461/System.Threading.Timer.dll",
-        "tasks/net461/System.Threading.dll",
-        "tasks/net461/System.ValueTuple.dll",
-        "tasks/net461/System.Xml.ReaderWriter.dll",
-        "tasks/net461/System.Xml.XDocument.dll",
-        "tasks/net461/System.Xml.XPath.XDocument.dll",
-        "tasks/net461/System.Xml.XPath.XmlDocument.dll",
-        "tasks/net461/System.Xml.XPath.dll",
-        "tasks/net461/System.Xml.XmlDocument.dll",
-        "tasks/net461/System.Xml.XmlSerializer.dll",
-        "tasks/net461/netstandard.dll",
-        "tasks/netcoreapp2.0/Microsoft.Build.Framework.dll",
-        "tasks/netcoreapp2.0/Microsoft.Build.Utilities.Core.dll",
-        "tasks/netcoreapp2.0/Microsoft.CodeAnalysis.CSharp.dll",
-        "tasks/netcoreapp2.0/Microsoft.CodeAnalysis.dll",
-        "tasks/netcoreapp2.0/Microsoft.DotNet.PlatformAbstractions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Configuration.Binder.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Configuration.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.DependencyModel.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Logging.Console.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Logging.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Options.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Primitives.dll",
-        "tasks/netcoreapp2.0/Newtonsoft.Json.dll",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.deps.json",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.dll",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.dll.config",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.runtimeconfig.json",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.xml",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.dll",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.pdb",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.xml",
-        "tasks/netcoreapp2.0/Orleans.Core.Abstractions.dll",
-        "tasks/netcoreapp2.0/Orleans.Core.Abstractions.pdb",
-        "tasks/netcoreapp2.0/Orleans.Core.Abstractions.xml",
-        "tasks/netcoreapp2.0/Orleans.Core.dll",
-        "tasks/netcoreapp2.0/Orleans.Core.pdb",
-        "tasks/netcoreapp2.0/Orleans.Core.xml",
-        "tasks/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "tasks/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "tasks/netcoreapp2.0/System.Xml.XPath.XmlDocument.dll",
-        "tasks/netcoreapp2.0/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "tasks/netcoreapp2.1/Microsoft.Build.Framework.dll",
-        "tasks/netcoreapp2.1/Microsoft.Build.Utilities.Core.dll",
-        "tasks/netcoreapp2.1/Microsoft.CodeAnalysis.CSharp.dll",
-        "tasks/netcoreapp2.1/Microsoft.CodeAnalysis.dll",
-        "tasks/netcoreapp2.1/Microsoft.DotNet.PlatformAbstractions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Configuration.Binder.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Configuration.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.DependencyInjection.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.DependencyModel.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Logging.Console.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Logging.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Options.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Primitives.dll",
-        "tasks/netcoreapp2.1/Newtonsoft.Json.dll",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.deps.json",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.dll",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.dll.config",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.runtimeconfig.json",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.xml",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.dll",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.pdb",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.xml",
-        "tasks/netcoreapp2.1/Orleans.Core.Abstractions.dll",
-        "tasks/netcoreapp2.1/Orleans.Core.Abstractions.pdb",
-        "tasks/netcoreapp2.1/Orleans.Core.Abstractions.xml",
-        "tasks/netcoreapp2.1/Orleans.Core.dll",
-        "tasks/netcoreapp2.1/Orleans.Core.pdb",
-        "tasks/netcoreapp2.1/Orleans.Core.xml",
-        "tasks/netcoreapp2.1/System.Runtime.CompilerServices.Unsafe.dll",
-        "tasks/netcoreapp2.1/System.Text.Encoding.CodePages.dll",
-        "tasks/netcoreapp2.1/System.Xml.XPath.XmlDocument.dll",
-        "tasks/netcoreapp2.1/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll"
       ]
     },
     "Microsoft.Orleans.OrleansProviders/2.1.2": {
@@ -6565,7 +6337,6 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.Orleans.Client >= 2.1.2",
       "Microsoft.Orleans.Core >= 2.1.2",
-      "Microsoft.Orleans.OrleansCodeGenerator.Build >= 2.1.2",
       "Microsoft.Orleans.Server >= 2.1.2",
       "ShoppingRecordServer >= 1.0.0"
     ]
@@ -6577,11 +6348,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\ShoppingRecord\\ShoppingRecord\\ShoppingRecord.csproj",
+      "projectUniqueName": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\ShoppingRecord\\ShoppingRecord\\ShoppingRecord.csproj",
       "projectName": "ShoppingRecord",
-      "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\ShoppingRecord\\ShoppingRecord\\ShoppingRecord.csproj",
+      "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\ShoppingRecord\\ShoppingRecord\\ShoppingRecord.csproj",
       "packagesPath": "C:\\Users\\Ming\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\ShoppingRecord\\ShoppingRecord\\obj\\",
+      "outputPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\ShoppingRecord\\ShoppingRecord\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6601,14 +6372,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\IGoods\\IGoods.csproj": {
-              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\IGoods\\IGoods.csproj"
+            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\IGoods\\IGoods.csproj": {
+              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\IGoods\\IGoods.csproj"
             },
-            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj": {
-              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj"
+            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj": {
+              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj"
             },
-            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\ShoppingRecord\\ShoppingRecordServer\\ShoppingRecordServer.csproj": {
-              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\ShoppingRecord\\ShoppingRecordServer\\ShoppingRecordServer.csproj"
+            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\ShoppingRecord\\ShoppingRecordServer\\ShoppingRecordServer.csproj": {
+              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\ShoppingRecord\\ShoppingRecordServer\\ShoppingRecordServer.csproj"
             }
           }
         }
@@ -6639,12 +6410,6 @@
             "target": "Package",
             "version": "[2.1.2, )"
           },
-          "Microsoft.Orleans.OrleansCodeGenerator.Build": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[2.1.2, )"
-          },
           "Microsoft.Orleans.Server": {
             "target": "Package",
             "version": "[2.1.2, )"
@@ -6657,5 +6422,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\Entity\\Entity.csproj'. The project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\Entity\\Entity.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

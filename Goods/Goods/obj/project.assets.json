@@ -2,31 +2,31 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "Microsoft.CSharp/4.3.0": {
+      "Bond.Core.CSharp/5.3.1": {
         "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.0/Microsoft.CSharp.dll": {}
+          "lib/netstandard1.6/Bond.Attributes.dll": {},
+          "lib/netstandard1.6/Bond.IO.dll": {},
+          "lib/netstandard1.6/Bond.Reflection.dll": {},
+          "lib/netstandard1.6/Bond.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CSharp.dll": {}
+          "lib/netstandard1.6/Bond.Attributes.dll": {},
+          "lib/netstandard1.6/Bond.IO.dll": {},
+          "lib/netstandard1.6/Bond.Reflection.dll": {},
+          "lib/netstandard1.6/Bond.dll": {}
+        }
+      },
+      "Google.Protobuf/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Google.Protobuf.dll": {}
         }
       },
       "Microsoft.DotNet.PlatformAbstractions/2.0.0": {
@@ -461,13 +461,17 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.1.2": {
+      "Microsoft.Orleans.OrleansGoogleUtils/2.1.2": {
         "type": "package",
-        "build": {
-          "build/Microsoft.Orleans.OrleansCodeGenerator.Build.targets": {}
+        "dependencies": {
+          "Google.Protobuf": "3.4.0",
+          "Microsoft.Orleans.Core": "2.1.2"
         },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.Orleans.OrleansCodeGenerator.Build.targets": {}
+        "compile": {
+          "lib/netstandard2.0/Orleans.Serialization.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.Serialization.Protobuf.dll": {}
         }
       },
       "Microsoft.Orleans.OrleansProviders/2.1.2": {
@@ -508,6 +512,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Orleans.Runtime.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Orleans.Serialization.Bond/2.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Bond.Core.CSharp": "5.3.1",
+          "Microsoft.Orleans.Core": "2.1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Orleans.Serialization.Bond.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.Serialization.Bond.dll": {}
         }
       },
       "Microsoft.Orleans.Server/2.1.2": {
@@ -569,21 +586,13 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/10.0.3": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.3.0",
-          "NETStandard.Library": "1.6.1",
-          "System.ComponentModel.TypeConverter": "4.3.0",
-          "System.Runtime.Serialization.Formatters": "4.3.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Xml.XmlDocument": "4.3.0"
-        },
         "compile": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -990,23 +999,24 @@
           "ref/netstandard1.5/_._": {}
         }
       },
-      "System.Dynamic.Runtime/4.3.0": {
+      "System.Dynamic.Runtime/4.0.11": {
         "type": "package",
         "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Globalization": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Linq.Expressions": "4.1.0",
+          "System.ObjectModel": "4.0.12",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Emit": "4.0.1",
+          "System.Reflection.Emit.ILGeneration": "4.0.1",
+          "System.Reflection.Primitives": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Threading": "4.0.11"
         },
         "compile": {
           "ref/netstandard1.3/System.Dynamic.Runtime.dll": {}
@@ -1862,10 +1872,25 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Orleans.Core": "2.1.2",
+          "Microsoft.Orleans.Serialization.Bond": "2.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entity.dll": {}
+        }
+      },
       "GoodsServer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Entity": "1.0.0",
           "IGoods": "1.0.0",
           "Microsoft.Orleans.Core": "2.1.2"
         },
@@ -1880,6 +1905,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Entity": "1.0.0",
           "Microsoft.Orleans.Core": "2.1.2"
         },
         "compile": {
@@ -1905,61 +1931,94 @@
     }
   },
   "libraries": {
-    "Microsoft.CSharp/4.3.0": {
-      "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
+    "Bond.Core.CSharp/5.3.1": {
+      "sha512": "oGErDYC+fo8RmDxPF5mbNd/sszXLTrXpJ44TffaUuDX3v5D5y4TizNWcVA7C0jHLBdPXR2E9DSuQoQom7SJFNA==",
       "type": "package",
-      "path": "microsoft.csharp/4.3.0",
+      "path": "bond.core.csharp/5.3.1",
       "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/Microsoft.CSharp.dll",
-        "lib/netstandard1.3/Microsoft.CSharp.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.3.0.nupkg.sha512",
-        "microsoft.csharp.nuspec",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/Microsoft.CSharp.dll",
-        "ref/netcore50/Microsoft.CSharp.xml",
-        "ref/netcore50/de/Microsoft.CSharp.xml",
-        "ref/netcore50/es/Microsoft.CSharp.xml",
-        "ref/netcore50/fr/Microsoft.CSharp.xml",
-        "ref/netcore50/it/Microsoft.CSharp.xml",
-        "ref/netcore50/ja/Microsoft.CSharp.xml",
-        "ref/netcore50/ko/Microsoft.CSharp.xml",
-        "ref/netcore50/ru/Microsoft.CSharp.xml",
-        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
-        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/Microsoft.CSharp.dll",
-        "ref/netstandard1.0/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._"
+        ".signature.p7s",
+        "bond.core.csharp.5.3.1.nupkg.sha512",
+        "bond.core.csharp.nuspec",
+        "lib/net40/Bond.Attributes.dll",
+        "lib/net40/Bond.Attributes.pdb",
+        "lib/net40/Bond.Attributes.xml",
+        "lib/net40/Bond.IO.dll",
+        "lib/net40/Bond.IO.pdb",
+        "lib/net40/Bond.IO.xml",
+        "lib/net40/Bond.Reflection.dll",
+        "lib/net40/Bond.Reflection.pdb",
+        "lib/net40/Bond.Reflection.xml",
+        "lib/net40/Bond.dll",
+        "lib/net40/Bond.pdb",
+        "lib/net40/Bond.xml",
+        "lib/net45/Bond.Attributes.dll",
+        "lib/net45/Bond.Attributes.pdb",
+        "lib/net45/Bond.Attributes.xml",
+        "lib/net45/Bond.IO.dll",
+        "lib/net45/Bond.IO.pdb",
+        "lib/net45/Bond.IO.xml",
+        "lib/net45/Bond.Reflection.dll",
+        "lib/net45/Bond.Reflection.pdb",
+        "lib/net45/Bond.Reflection.xml",
+        "lib/net45/Bond.dll",
+        "lib/net45/Bond.pdb",
+        "lib/net45/Bond.xml",
+        "lib/netstandard1.0/Bond.Attributes.dll",
+        "lib/netstandard1.0/Bond.Attributes.pdb",
+        "lib/netstandard1.0/Bond.Attributes.xml",
+        "lib/netstandard1.0/Bond.Reflection.dll",
+        "lib/netstandard1.0/Bond.Reflection.pdb",
+        "lib/netstandard1.0/Bond.Reflection.xml",
+        "lib/netstandard1.0/Bond.dll",
+        "lib/netstandard1.0/Bond.pdb",
+        "lib/netstandard1.0/Bond.xml",
+        "lib/netstandard1.3/Bond.Attributes.dll",
+        "lib/netstandard1.3/Bond.Attributes.pdb",
+        "lib/netstandard1.3/Bond.Attributes.xml",
+        "lib/netstandard1.3/Bond.IO.dll",
+        "lib/netstandard1.3/Bond.IO.pdb",
+        "lib/netstandard1.3/Bond.IO.xml",
+        "lib/netstandard1.3/Bond.Reflection.dll",
+        "lib/netstandard1.3/Bond.Reflection.pdb",
+        "lib/netstandard1.3/Bond.Reflection.xml",
+        "lib/netstandard1.3/Bond.dll",
+        "lib/netstandard1.3/Bond.pdb",
+        "lib/netstandard1.3/Bond.xml",
+        "lib/netstandard1.6/Bond.Attributes.dll",
+        "lib/netstandard1.6/Bond.Attributes.pdb",
+        "lib/netstandard1.6/Bond.Attributes.xml",
+        "lib/netstandard1.6/Bond.IO.dll",
+        "lib/netstandard1.6/Bond.IO.pdb",
+        "lib/netstandard1.6/Bond.IO.xml",
+        "lib/netstandard1.6/Bond.Reflection.dll",
+        "lib/netstandard1.6/Bond.Reflection.pdb",
+        "lib/netstandard1.6/Bond.Reflection.xml",
+        "lib/netstandard1.6/Bond.dll",
+        "lib/netstandard1.6/Bond.pdb",
+        "lib/netstandard1.6/Bond.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Attributes.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Attributes.pdb",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Attributes.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Reflection.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Reflection.pdb",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.Reflection.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.pdb",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Bond.xml"
+      ]
+    },
+    "Google.Protobuf/3.4.0": {
+      "sha512": "0J/rY+xBCRnapwUtNiT/3izNX7fREzXjChtkkC7RNnwB8RS/3h95C1geUTC79XuYO1Mr3UGqPfnoxs2Jm6B01g==",
+      "type": "package",
+      "path": "google.protobuf/3.4.0",
+      "files": [
+        ".signature.p7s",
+        "google.protobuf.3.4.0.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net451/Google.Protobuf.dll",
+        "lib/net451/Google.Protobuf.xml",
+        "lib/netstandard1.0/Google.Protobuf.dll",
+        "lib/netstandard1.0/Google.Protobuf.xml"
       ]
     },
     "Microsoft.DotNet.PlatformAbstractions/2.0.0": {
@@ -2506,224 +2565,17 @@
         "microsoft.orleans.core.abstractions.nuspec"
       ]
     },
-    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.1.2": {
-      "sha512": "ZLOdK/oLRsHeatcWokICugdkBJqaLALDlmOHY5x0YevCk6ksgay0o4xJCvYQ98Hvj88CQEuYE/6GCID0FUmLcg==",
+    "Microsoft.Orleans.OrleansGoogleUtils/2.1.2": {
+      "sha512": "CBtHWbBNGPIZ5Gyaqiy/GwxOrnlYWFj4F1FPY2nUFziDljcLEIKzMPCacEPxi8ZT9z/vf8saUjCq62ihjUlR0w==",
       "type": "package",
-      "path": "microsoft.orleans.orleanscodegenerator.build/2.1.2",
+      "path": "microsoft.orleans.orleansgoogleutils/2.1.2",
       "files": [
         ".signature.p7s",
-        "build/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
-        "buildMultiTargeting/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
-        "microsoft.orleans.orleanscodegenerator.build.2.1.2.nupkg.sha512",
-        "microsoft.orleans.orleanscodegenerator.build.nuspec",
-        "tasks/net461/Microsoft.Build.Framework.dll",
-        "tasks/net461/Microsoft.Build.Utilities.Core.dll",
-        "tasks/net461/Microsoft.CodeAnalysis.CSharp.dll",
-        "tasks/net461/Microsoft.CodeAnalysis.dll",
-        "tasks/net461/Microsoft.DotNet.PlatformAbstractions.dll",
-        "tasks/net461/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "tasks/net461/Microsoft.Extensions.Configuration.Binder.dll",
-        "tasks/net461/Microsoft.Extensions.Configuration.dll",
-        "tasks/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tasks/net461/Microsoft.Extensions.DependencyInjection.dll",
-        "tasks/net461/Microsoft.Extensions.DependencyModel.dll",
-        "tasks/net461/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tasks/net461/Microsoft.Extensions.Logging.Console.dll",
-        "tasks/net461/Microsoft.Extensions.Logging.dll",
-        "tasks/net461/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "tasks/net461/Microsoft.Extensions.Options.dll",
-        "tasks/net461/Microsoft.Extensions.Primitives.dll",
-        "tasks/net461/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
-        "tasks/net461/Microsoft.Win32.Primitives.dll",
-        "tasks/net461/Newtonsoft.Json.dll",
-        "tasks/net461/Orleans.CodeGeneration.Build.deps.json",
-        "tasks/net461/Orleans.CodeGeneration.Build.exe",
-        "tasks/net461/Orleans.CodeGeneration.Build.exe.config",
-        "tasks/net461/Orleans.CodeGeneration.Build.xml",
-        "tasks/net461/Orleans.CodeGeneration.dll",
-        "tasks/net461/Orleans.CodeGeneration.pdb",
-        "tasks/net461/Orleans.CodeGeneration.xml",
-        "tasks/net461/Orleans.Core.Abstractions.dll",
-        "tasks/net461/Orleans.Core.Abstractions.pdb",
-        "tasks/net461/Orleans.Core.Abstractions.xml",
-        "tasks/net461/Orleans.Core.dll",
-        "tasks/net461/Orleans.Core.pdb",
-        "tasks/net461/Orleans.Core.xml",
-        "tasks/net461/System.AppContext.dll",
-        "tasks/net461/System.Collections.Concurrent.dll",
-        "tasks/net461/System.Collections.Immutable.dll",
-        "tasks/net461/System.Collections.NonGeneric.dll",
-        "tasks/net461/System.Collections.Specialized.dll",
-        "tasks/net461/System.Collections.dll",
-        "tasks/net461/System.ComponentModel.EventBasedAsync.dll",
-        "tasks/net461/System.ComponentModel.Primitives.dll",
-        "tasks/net461/System.ComponentModel.TypeConverter.dll",
-        "tasks/net461/System.ComponentModel.dll",
-        "tasks/net461/System.Console.dll",
-        "tasks/net461/System.Data.Common.dll",
-        "tasks/net461/System.Diagnostics.Contracts.dll",
-        "tasks/net461/System.Diagnostics.Debug.dll",
-        "tasks/net461/System.Diagnostics.FileVersionInfo.dll",
-        "tasks/net461/System.Diagnostics.Process.dll",
-        "tasks/net461/System.Diagnostics.StackTrace.dll",
-        "tasks/net461/System.Diagnostics.TextWriterTraceListener.dll",
-        "tasks/net461/System.Diagnostics.Tools.dll",
-        "tasks/net461/System.Diagnostics.TraceSource.dll",
-        "tasks/net461/System.Diagnostics.Tracing.dll",
-        "tasks/net461/System.Drawing.Primitives.dll",
-        "tasks/net461/System.Dynamic.Runtime.dll",
-        "tasks/net461/System.Globalization.Calendars.dll",
-        "tasks/net461/System.Globalization.Extensions.dll",
-        "tasks/net461/System.Globalization.dll",
-        "tasks/net461/System.IO.Compression.ZipFile.dll",
-        "tasks/net461/System.IO.Compression.dll",
-        "tasks/net461/System.IO.FileSystem.DriveInfo.dll",
-        "tasks/net461/System.IO.FileSystem.Primitives.dll",
-        "tasks/net461/System.IO.FileSystem.Watcher.dll",
-        "tasks/net461/System.IO.FileSystem.dll",
-        "tasks/net461/System.IO.IsolatedStorage.dll",
-        "tasks/net461/System.IO.MemoryMappedFiles.dll",
-        "tasks/net461/System.IO.Pipes.dll",
-        "tasks/net461/System.IO.UnmanagedMemoryStream.dll",
-        "tasks/net461/System.IO.dll",
-        "tasks/net461/System.Linq.Expressions.dll",
-        "tasks/net461/System.Linq.Parallel.dll",
-        "tasks/net461/System.Linq.Queryable.dll",
-        "tasks/net461/System.Linq.dll",
-        "tasks/net461/System.Net.Http.dll",
-        "tasks/net461/System.Net.NameResolution.dll",
-        "tasks/net461/System.Net.NetworkInformation.dll",
-        "tasks/net461/System.Net.Ping.dll",
-        "tasks/net461/System.Net.Primitives.dll",
-        "tasks/net461/System.Net.Requests.dll",
-        "tasks/net461/System.Net.Security.dll",
-        "tasks/net461/System.Net.Sockets.dll",
-        "tasks/net461/System.Net.WebHeaderCollection.dll",
-        "tasks/net461/System.Net.WebSockets.Client.dll",
-        "tasks/net461/System.Net.WebSockets.dll",
-        "tasks/net461/System.ObjectModel.dll",
-        "tasks/net461/System.Reflection.Extensions.dll",
-        "tasks/net461/System.Reflection.Metadata.dll",
-        "tasks/net461/System.Reflection.Primitives.dll",
-        "tasks/net461/System.Reflection.TypeExtensions.dll",
-        "tasks/net461/System.Reflection.dll",
-        "tasks/net461/System.Resources.Reader.dll",
-        "tasks/net461/System.Resources.ResourceManager.dll",
-        "tasks/net461/System.Resources.Writer.dll",
-        "tasks/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "tasks/net461/System.Runtime.CompilerServices.VisualC.dll",
-        "tasks/net461/System.Runtime.Extensions.dll",
-        "tasks/net461/System.Runtime.Handles.dll",
-        "tasks/net461/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "tasks/net461/System.Runtime.InteropServices.dll",
-        "tasks/net461/System.Runtime.Loader.dll",
-        "tasks/net461/System.Runtime.Numerics.dll",
-        "tasks/net461/System.Runtime.Serialization.Formatters.dll",
-        "tasks/net461/System.Runtime.Serialization.Json.dll",
-        "tasks/net461/System.Runtime.Serialization.Primitives.dll",
-        "tasks/net461/System.Runtime.Serialization.Xml.dll",
-        "tasks/net461/System.Runtime.dll",
-        "tasks/net461/System.Security.Claims.dll",
-        "tasks/net461/System.Security.Cryptography.Algorithms.dll",
-        "tasks/net461/System.Security.Cryptography.Csp.dll",
-        "tasks/net461/System.Security.Cryptography.Encoding.dll",
-        "tasks/net461/System.Security.Cryptography.Primitives.dll",
-        "tasks/net461/System.Security.Cryptography.X509Certificates.dll",
-        "tasks/net461/System.Security.Principal.dll",
-        "tasks/net461/System.Security.SecureString.dll",
-        "tasks/net461/System.Text.Encoding.CodePages.dll",
-        "tasks/net461/System.Text.Encoding.Extensions.dll",
-        "tasks/net461/System.Text.Encoding.dll",
-        "tasks/net461/System.Text.RegularExpressions.dll",
-        "tasks/net461/System.Threading.Overlapped.dll",
-        "tasks/net461/System.Threading.Tasks.Extensions.dll",
-        "tasks/net461/System.Threading.Tasks.Parallel.dll",
-        "tasks/net461/System.Threading.Tasks.dll",
-        "tasks/net461/System.Threading.Thread.dll",
-        "tasks/net461/System.Threading.ThreadPool.dll",
-        "tasks/net461/System.Threading.Timer.dll",
-        "tasks/net461/System.Threading.dll",
-        "tasks/net461/System.ValueTuple.dll",
-        "tasks/net461/System.Xml.ReaderWriter.dll",
-        "tasks/net461/System.Xml.XDocument.dll",
-        "tasks/net461/System.Xml.XPath.XDocument.dll",
-        "tasks/net461/System.Xml.XPath.XmlDocument.dll",
-        "tasks/net461/System.Xml.XPath.dll",
-        "tasks/net461/System.Xml.XmlDocument.dll",
-        "tasks/net461/System.Xml.XmlSerializer.dll",
-        "tasks/net461/netstandard.dll",
-        "tasks/netcoreapp2.0/Microsoft.Build.Framework.dll",
-        "tasks/netcoreapp2.0/Microsoft.Build.Utilities.Core.dll",
-        "tasks/netcoreapp2.0/Microsoft.CodeAnalysis.CSharp.dll",
-        "tasks/netcoreapp2.0/Microsoft.CodeAnalysis.dll",
-        "tasks/netcoreapp2.0/Microsoft.DotNet.PlatformAbstractions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Configuration.Binder.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Configuration.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.DependencyModel.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Logging.Console.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Logging.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Options.dll",
-        "tasks/netcoreapp2.0/Microsoft.Extensions.Primitives.dll",
-        "tasks/netcoreapp2.0/Newtonsoft.Json.dll",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.deps.json",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.dll",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.dll.config",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.runtimeconfig.json",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.Build.xml",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.dll",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.pdb",
-        "tasks/netcoreapp2.0/Orleans.CodeGeneration.xml",
-        "tasks/netcoreapp2.0/Orleans.Core.Abstractions.dll",
-        "tasks/netcoreapp2.0/Orleans.Core.Abstractions.pdb",
-        "tasks/netcoreapp2.0/Orleans.Core.Abstractions.xml",
-        "tasks/netcoreapp2.0/Orleans.Core.dll",
-        "tasks/netcoreapp2.0/Orleans.Core.pdb",
-        "tasks/netcoreapp2.0/Orleans.Core.xml",
-        "tasks/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "tasks/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "tasks/netcoreapp2.0/System.Xml.XPath.XmlDocument.dll",
-        "tasks/netcoreapp2.0/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "tasks/netcoreapp2.1/Microsoft.Build.Framework.dll",
-        "tasks/netcoreapp2.1/Microsoft.Build.Utilities.Core.dll",
-        "tasks/netcoreapp2.1/Microsoft.CodeAnalysis.CSharp.dll",
-        "tasks/netcoreapp2.1/Microsoft.CodeAnalysis.dll",
-        "tasks/netcoreapp2.1/Microsoft.DotNet.PlatformAbstractions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Configuration.Binder.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Configuration.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.DependencyInjection.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.DependencyModel.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Logging.Console.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Logging.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Options.dll",
-        "tasks/netcoreapp2.1/Microsoft.Extensions.Primitives.dll",
-        "tasks/netcoreapp2.1/Newtonsoft.Json.dll",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.deps.json",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.dll",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.dll.config",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.runtimeconfig.json",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.Build.xml",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.dll",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.pdb",
-        "tasks/netcoreapp2.1/Orleans.CodeGeneration.xml",
-        "tasks/netcoreapp2.1/Orleans.Core.Abstractions.dll",
-        "tasks/netcoreapp2.1/Orleans.Core.Abstractions.pdb",
-        "tasks/netcoreapp2.1/Orleans.Core.Abstractions.xml",
-        "tasks/netcoreapp2.1/Orleans.Core.dll",
-        "tasks/netcoreapp2.1/Orleans.Core.pdb",
-        "tasks/netcoreapp2.1/Orleans.Core.xml",
-        "tasks/netcoreapp2.1/System.Runtime.CompilerServices.Unsafe.dll",
-        "tasks/netcoreapp2.1/System.Text.Encoding.CodePages.dll",
-        "tasks/netcoreapp2.1/System.Xml.XPath.XmlDocument.dll",
-        "tasks/netcoreapp2.1/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll"
+        "lib/netstandard2.0/Orleans.Serialization.Protobuf.dll",
+        "lib/netstandard2.0/Orleans.Serialization.Protobuf.pdb",
+        "lib/netstandard2.0/Orleans.Serialization.Protobuf.xml",
+        "microsoft.orleans.orleansgoogleutils.2.1.2.nupkg.sha512",
+        "microsoft.orleans.orleansgoogleutils.nuspec"
       ]
     },
     "Microsoft.Orleans.OrleansProviders/2.1.2": {
@@ -2763,6 +2615,19 @@
         "lib/netstandard2.0/Orleans.Runtime.Abstractions.xml",
         "microsoft.orleans.runtime.abstractions.2.1.2.nupkg.sha512",
         "microsoft.orleans.runtime.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Orleans.Serialization.Bond/2.1.2": {
+      "sha512": "ExsEN2Po+5ch2lFRPYfo2w4f/2h1HaHwZ81NUvi7JW/WG0EhjduEfjuVE/TRxcXvx4otQUvSE5Lm1pf6fBcIIw==",
+      "type": "package",
+      "path": "microsoft.orleans.serialization.bond/2.1.2",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Orleans.Serialization.Bond.dll",
+        "lib/netstandard2.0/Orleans.Serialization.Bond.pdb",
+        "lib/netstandard2.0/Orleans.Serialization.Bond.xml",
+        "microsoft.orleans.serialization.bond.2.1.2.nupkg.sha512",
+        "microsoft.orleans.serialization.bond.nuspec"
       ]
     },
     "Microsoft.Orleans.Server/2.1.2": {
@@ -2966,10 +2831,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/10.0.3": {
-      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
-      "path": "newtonsoft.json/10.0.3",
+      "path": "newtonsoft.json/11.0.2",
       "files": [
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
@@ -2984,13 +2849,14 @@
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.10.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "tools/install.ps1"
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -3874,10 +3740,10 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
-    "System.Dynamic.Runtime/4.3.0": {
-      "sha512": "SNVi1E/vfWUAs/WYKhE9+qlS6KqK0YVhnlT0HQtr8pMIA8YX3lwy3uPMownDwdYISBdmAF/2holEIldVp85Wag==",
+    "System.Dynamic.Runtime/4.0.11": {
+      "sha512": "db34f6LHYM0U0JpE+sOmjar27BnqTVkbLJhgfwMpTdgTigG/Hna3m2MYVwnFzGGKnEJk2UXFuoVTr8WUbU91/A==",
       "type": "package",
-      "path": "system.dynamic.runtime/4.3.0",
+      "path": "system.dynamic.runtime/4.0.11",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -3939,7 +3805,7 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
         "runtimes/aot/lib/netcore50/System.Dynamic.Runtime.dll",
-        "system.dynamic.runtime.4.3.0.nupkg.sha512",
+        "system.dynamic.runtime.4.0.11.nupkg.sha512",
         "system.dynamic.runtime.nuspec"
       ]
     },
@@ -6541,6 +6407,11 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "Entity/1.0.0": {
+      "type": "project",
+      "path": "../../OrleansSupport/Entity/Entity.csproj",
+      "msbuildProject": "../../OrleansSupport/Entity/Entity.csproj"
+    },
     "GoodsServer/1.0.0": {
       "type": "project",
       "path": "../GoodsServer/GoodsServer.csproj",
@@ -6559,6 +6430,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Entity >= 1.0.0",
       "GoodsServer >= 1.0.0",
       "IGoods >= 1.0.0",
       "IShoppingRecord >= 1.0.0",
@@ -6566,8 +6438,9 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.Orleans.Client >= 2.1.2",
       "Microsoft.Orleans.Core >= 2.1.2",
-      "Microsoft.Orleans.OrleansCodeGenerator.Build >= 2.1.2",
-      "Microsoft.Orleans.Server >= 2.1.2"
+      "Microsoft.Orleans.OrleansGoogleUtils >= 2.1.2",
+      "Microsoft.Orleans.Server >= 2.1.2",
+      "Newtonsoft.Json >= 11.0.2"
     ]
   },
   "packageFolders": {
@@ -6577,11 +6450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\Goods\\Goods\\Goods.csproj",
+      "projectUniqueName": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\Goods\\Goods\\Goods.csproj",
       "projectName": "Goods",
-      "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\Goods\\Goods\\Goods.csproj",
+      "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\Goods\\Goods\\Goods.csproj",
       "packagesPath": "C:\\Users\\Ming\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\Goods\\Goods\\obj\\",
+      "outputPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\Goods\\Goods\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6601,14 +6474,17 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\Goods\\GoodsServer\\GoodsServer.csproj": {
-              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\Goods\\GoodsServer\\GoodsServer.csproj"
+            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\Goods\\GoodsServer\\GoodsServer.csproj": {
+              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\Goods\\GoodsServer\\GoodsServer.csproj"
             },
-            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\IGoods\\IGoods.csproj": {
-              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\IGoods\\IGoods.csproj"
+            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\Entity\\Entity.csproj"
             },
-            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj": {
-              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj"
+            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\IGoods\\IGoods.csproj": {
+              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\IGoods\\IGoods.csproj"
+            },
+            "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj": {
+              "projectPath": "C:\\Users\\Ming\\Desktop\\OrelansLearning\\MyOrleansDemo\\OrleansSupport\\ShoppingRecord\\IShoppingRecord.csproj"
             }
           }
         }
@@ -6639,15 +6515,17 @@
             "target": "Package",
             "version": "[2.1.2, )"
           },
-          "Microsoft.Orleans.OrleansCodeGenerator.Build": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
-            "suppressParent": "All",
+          "Microsoft.Orleans.OrleansGoogleUtils": {
             "target": "Package",
             "version": "[2.1.2, )"
           },
           "Microsoft.Orleans.Server": {
             "target": "Package",
             "version": "[2.1.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[11.0.2, )"
           }
         },
         "imports": [

@@ -8,7 +8,7 @@
 #pragma warning disable 693
 #pragma warning disable 1591
 #pragma warning disable 1998
-[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof(OrleansGeneratedCode.OrleansCodeGena0656d6c06FeaturePopulator))]
+[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof(OrleansGeneratedCode.OrleansCodeGen22fb61cac8FeaturePopulator))]
 [assembly: global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
 [assembly: global::Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute(@"IGoods, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
 namespace IGoods
@@ -69,6 +69,18 @@ namespace IGoods
                     {
                         case 1255870734:
                             return @"GetGoodsDescribe";
+                        case -424144731:
+                            return @"StartTimerTest";
+                        case 1596526570:
+                            return @"StartTimerTestString";
+                        case 631307302:
+                            return @"StopTimerTest";
+                        case -280043827:
+                            return @"StopTimerTest";
+                        case -1685414735:
+                            return @"StartTimer";
+                        case -746241704:
+                            return @"GetGoodsList";
                         default:
                             throw new global::System.NotImplementedException(@"interfaceId=" + 192295384 + @",methodId=" + methodId);
                     }
@@ -81,6 +93,36 @@ namespace IGoods
         public global::System.Threading.Tasks.Task<global::System.String> GetGoodsDescribe()
         {
             return base.InvokeMethodAsync<global::System.String>(1255870734, null);
+        }
+
+        public global::System.Threading.Tasks.Task<global::Orleans.Runtime.IGrainReminder> StartTimerTest()
+        {
+            return base.InvokeMethodAsync<global::Orleans.Runtime.IGrainReminder>(-424144731, null);
+        }
+
+        public global::System.Threading.Tasks.Task StartTimerTestString(global::System.String TimerName)
+        {
+            return base.InvokeMethodAsync<global::System.Object>(1596526570, new global::System.Object[]{TimerName});
+        }
+
+        public global::System.Threading.Tasks.Task StopTimerTest(global::Orleans.Runtime.IGrainReminder grainReminder)
+        {
+            return base.InvokeMethodAsync<global::System.Object>(631307302, new global::System.Object[]{grainReminder});
+        }
+
+        public global::System.Threading.Tasks.Task StopTimerTest(global::System.String TimerName)
+        {
+            return base.InvokeMethodAsync<global::System.Object>(-280043827, new global::System.Object[]{TimerName});
+        }
+
+        public global::System.Threading.Tasks.Task StartTimer()
+        {
+            return base.InvokeMethodAsync<global::System.Object>(-1685414735, null);
+        }
+
+        public global::System.Threading.Tasks.Task<global::System.Collections.Generic.List<global::Entity.GoodsEntity>> GetGoodsList()
+        {
+            return base.InvokeMethodAsync<global::System.Collections.Generic.List<global::Entity.GoodsEntity>>(-746241704, null);
         }
     }
 
@@ -101,6 +143,22 @@ namespace IGoods
                     {
                         case 1255870734:
                             return await ((global::IGoods.IGoods)grain).GetGoodsDescribe();
+                        case -424144731:
+                            return await ((global::IGoods.IGoods)grain).StartTimerTest();
+                        case 1596526570:
+                            await ((global::IGoods.IGoods)grain).StartTimerTestString((global::System.String)arguments[0]);
+                            return null;
+                        case 631307302:
+                            await ((global::IGoods.IGoods)grain).StopTimerTest((global::Orleans.Runtime.IGrainReminder)arguments[0]);
+                            return null;
+                        case -280043827:
+                            await ((global::IGoods.IGoods)grain).StopTimerTest((global::System.String)arguments[0]);
+                            return null;
+                        case -1685414735:
+                            await ((global::IGoods.IGoods)grain).StartTimer();
+                            return null;
+                        case -746241704:
+                            return await ((global::IGoods.IGoods)grain).GetGoodsList();
                         default:
                             throw new global::System.NotImplementedException(@"interfaceId=" + 192295384 + @",methodId=" + methodId);
                     }
@@ -128,7 +186,7 @@ namespace IGoods
     }
 }
 
-namespace OrleansGeneratedCode7E8C32A1
+namespace OrleansGeneratedCode86455AEC
 {
     using global::Orleans;
     using global::System.Reflection;
@@ -137,7 +195,7 @@ namespace OrleansGeneratedCode7E8C32A1
 namespace OrleansGeneratedCode
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
-    internal sealed class OrleansCodeGena0656d6c06FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
+    internal sealed class OrleansCodeGen22fb61cac8FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
     {
         public void Populate(global::Orleans.Metadata.GrainInterfaceFeature feature)
         {
