@@ -1,0 +1,11 @@
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\bin\Debug\netstandard2.0\OrderServer.deps.json
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\bin\Debug\netstandard2.0\OrderServer.dll
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\bin\Debug\netstandard2.0\OrderServer.pdb
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\bin\Debug\netstandard2.0\Entity.dll
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\bin\Debug\netstandard2.0\IGoods.dll
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\bin\Debug\netstandard2.0\IShoppingRecord.dll
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\bin\Debug\netstandard2.0\Entity.pdb
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\bin\Debug\netstandard2.0\IGoods.pdb
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\bin\Debug\netstandard2.0\IShoppingRecord.pdb
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\obj\Debug\netstandard2.0\codegen\OrderServer.csproj.CoreCompileInputs.cache
+C:\Users\Ming\Desktop\OrelansLearning\MyOrleansDemo\OleansTheNet\Order\OrderServer\obj\Debug\netstandard2.0\codegen\OrderServer.AssemblyInfoInputs.cache
